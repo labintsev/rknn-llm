@@ -4,7 +4,7 @@ import argparse
 from dotenv import dotenv_values
 import boto3
 
-env = dotenv_values('/home/balezz/proj/rockchip/.env')
+env = dotenv_values('.env')
 BUCKET_NAME = 'labintsev'
 
 
