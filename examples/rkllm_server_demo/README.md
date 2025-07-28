@@ -11,6 +11,12 @@ You can run the demo with the only command:
 # Usage: ./build_rkllm_server_flask.sh --workshop [RKLLM-Server Working Path] --model_path [Absolute Path of Converted RKLLM Model on Board] --platform [Target Platform: rk3588/rk3576] [--lora_model_path [Lora Model Path]] [--prompt_cache_path [Prompt Cache File Path]]
 ./build_rkllm_server_flask.sh --workshop /user/data --model_path /user/data/model.rkllm --platform rk3588
 ```
+
+or 
+```
+python flask_server.py --rkllm_model_path ~/.cache/huggingface/hub/models--happyme531--Qwen2.5-VL-3B-Instruct-RKLLM/snapshots/a49d7c146ffa360f7c141e98354fedaca7d6bf91/ --target_platform rk3588
+```
+
 ### Access with API 
 After building the RKLLM-Server-Flask, You can use ‘chat_api_flask.py’ to access the RKLLM-Server-Flask and get the answer of RKLLM models.
 
